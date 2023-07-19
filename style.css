@@ -5,7 +5,15 @@
 .btn-primary{
     padding: 10px 20px;
     border-radius: 10px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-color: #f50a97;
+    /* background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%)); */
+}
+
+.btn-primary:hover{
+    background-color: #FFF;
+    color: black;
+    border: 1px solid #f50a97;
+
 }
 nav{
     display: flex;
@@ -21,6 +29,9 @@ nav{
     font-size: 20px;
     
 }
+.logo span{
+    color: #f50a97;
+}
 .logo h1{
     padding-left: 10px;
 }
@@ -30,7 +41,7 @@ nav{
 }
 
 .menu{
-    padding-top: 8px;
+    padding-top: 23px;
 }
 .menu ul li{
     list-style-type:  none;
@@ -46,7 +57,7 @@ nav{
 
 }
 
-.menu ul #follow{
+.menu ul .follow{
     background: rgba(11, 2, 35, 0.10);
     /* border-radius: 10px; */
     padding: 10px;
@@ -93,7 +104,11 @@ background-clip: text;
     border-radius: 48px;
     background: #4EC5F7;
 }
-
+.btn-go:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #f50a97;
+}
 .img img{
     width: 430px;
 }
@@ -111,6 +126,8 @@ background-clip: text;
     justify-content: space-around;
     margin-left: 225px;
     width: 1140px;
+    margin-top: 43px;
+    margin-bottom: 40px;
 }
 .gamer-item img{
     width: 540px;
@@ -207,3 +224,357 @@ font-weight: 700;
   /* background: wheat; */
   margin-left: 201px;
 }
+
+/* games-name */
+
+.games-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button-games {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* background-color: wheat; */
+    width: 1140px;
+    margin-left: 158px;
+    padding: 75px;
+    gap: 22px;
+    
+  }
+
+.games-name{
+    display: flex;
+    
+}
+.games-name p{
+    padding: 10px;
+}
+.games-name img{
+    width: 40px;
+}
+
+.games-name:hover{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    border: 1px solid  #FF42A5;
+    border-radius: 30px;
+    padding: 5px;
+   
+}
+
+/* play */
+
+.play {
+    display: flex;
+    justify-content: space-around;
+    padding: 75px;
+    width: 993px;
+    margin-left: 220px;
+    gap: 53px;
+    height: 520px;
+    /* background-color: wheat; */
+  }
+
+.play-text{
+    padding: 105px;
+    padding-left: 0;
+    text-align: end;
+}
+
+.play-text h1{
+    font-size: 46px;
+}
+.play-text span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#img-2 {
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    top: -160px;
+    right: 108px;
+  }
+
+/* footer */
+footer{
+    background: #0B0223;
+    color: white;
+    text-align: center;
+    height: 250px;
+    padding-top: 40px;
+}
+
+div{
+    padding-top: 15px;
+}
+
+.logo-part{
+    display: flex;
+    margin-left: 690px;
+}
+
+.logo-part img{
+    width: 70px;
+}
+
+.logo-part span{
+    color: #f50a97;
+}
+
+.footer-icon{
+    gap: 20px;
+}
+
+.footer-menu ul li{
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+        padding: 83px;
+        margin-top: -43px;
+        text-align: center;
+        align-items: center;
+       
+    }
+     .menu ul .follow{
+        /* padding: 20px; */
+        border: 0px;
+        padding-top: 20px;
+        margin-top: 20px;
+        background: #FFF;
+    }
+    .menu{
+       flex-direction: column;
+    }
+    .logo{
+        flex-direction: column;
+
+    }
+    .logo img{
+        padding-left: 12px;
+    }
+
+    .banner-section{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+   .banner-section img{
+    width: 100%;
+
+   }
+   .banner-item{
+    padding: 0;
+    text-align: center;
+    }
+   .gamer{
+    margin-top: 40px;
+   }
+    .gamer-item{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .gamer-item>img{
+        width: 100%;
+    }
+    .gamer-content{
+        text-align: center;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .card{
+       flex-direction: column;
+       width: 100%;
+    }
+    .card-content{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;  
+        width: 100%; 
+     }
+     .play{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 300px;
+     }
+     .play-text {
+        margin-top: 652px;
+        padding: 20px;
+        text-align: center;
+      }
+      .play-img img{
+        width: 87%;
+        margin: 35px;
+      }
+      .play-img>#img-2{
+        width: 42%;
+        height: 29%;
+       margin-left: 104px;
+      }
+       .games-section{
+        margin-top: 400px;
+       }
+      .button-games{
+        padding-left: 10px;
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+      }
+
+    footer{
+        margin-top: 130px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 40px;
+    }
+    .logo-part{
+        margin: 0;
+        padding-left: 100px;
+    }
+    .footer-menu{
+     padding: 0;
+      display: grid;
+      grid-template-columns: repeat();
+    }
+      
+    }
+
+
+    @media screen and (min-width: 576px) and (max-width: 992px){
+        nav{
+            flex-direction: column;
+            padding: 83px;
+            margin-top: -43px;
+            text-align: center;
+            align-items: center;
+        }
+        .menu{
+           flex-direction: column;
+        }
+        .logo{
+            flex-direction: column;
+    
+        }
+        .logo img{
+            padding-left: 12px;
+        }
+    
+        .banner-section{
+            flex-direction: column;
+            flex-direction: column-reverse;
+        }
+       .banner-section img{
+        width: 100%;
+    
+       }
+       .banner-item{
+        padding: 0;
+        text-align: center;
+        }
+       .gamer{
+        margin-top: 40px;
+       }
+        .gamer-item{
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .gamer-item>img{
+            width: 100%;
+        }
+        .gamer-content{
+            text-align: center;
+            padding: 0;
+            margin-top: 30px;
+        }
+    
+        .card{
+           flex-direction: column;
+           width: 100%;
+        }
+        .card-content{
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;  
+            width: 100%; 
+         }
+         .play{
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 300px;
+         }
+         .play-text {
+            margin-top: 652px;
+            padding: 20px;
+            text-align: center;
+          }
+          .play-img img{
+            width: 87%;
+            margin: 35px;
+          }
+          .play-img>#img-2{
+            width: 42%;
+            height: 29%;
+           margin-left: 104px;
+          }
+           .games-section{
+            margin-top: 400px;
+           }
+          .button-games{
+            padding-left: 10px;
+            margin: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+           
+          }
+    
+        footer{
+            margin-top: 130px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+        .logo-part{
+            margin: 0;
+            padding-left: 100px;
+        }
+        .footer-menu{
+         padding: 0;
+          display: grid;
+          grid-template-columns: repeat();
+        }
+          
+        }
+    }
