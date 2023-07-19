@@ -362,7 +362,7 @@ div{
         background: #FFF;
     }
     .menu{
-       flex-direction: column;
+       display: block;
     }
     .logo{
         flex-direction: column;
@@ -475,7 +475,8 @@ div{
             align-items: center;
         }
         .menu{
-           flex-direction: column;
+           display: block;
+           
         }
         .logo{
             flex-direction: column;
